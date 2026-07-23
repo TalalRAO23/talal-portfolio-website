@@ -23,5 +23,3 @@ This portfolio represents my journey as a Frontend Developer and Computer Scienc
 - Skills showcase
 - Contact section
 - Clean component-based React structure
-
-## 📂 Project Structure
