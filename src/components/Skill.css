@@ -1,0 +1,127 @@
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+
+}
+
+.skill-card {
+    /* border: 2px solid #fff; */
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 310px;
+    width: 355px;
+
+    position: relative;
+    overflow: hidden;
+
+    background: conic-gradient(from 0deg,
+            transparent,
+            #f472b6,
+            #c084fc,
+            #818cf8,
+            #38bdf8,
+            #2dd4bf,
+            #fbbf24,
+            transparent);
+
+    transition: transform 0.4s ease;
+    transform-style: preserve-3d;
+
+    /* animation: rotateGradient 3s linear infinite; */
+}
+
+.skill-card:hover {
+    cursor: pointer;
+    transform: perspective(1000px) rotateX(8deg) rotateY(-8deg) scale(1.03);
+    /* transform: rotate(-8deg) scale(1.05); */
+    transform: perspective(1000px) rotateX(12deg) rotateY(-12deg) scale(1.05);
+    box-shadow: 0 20px 40px rgba(144, 143, 143, 0.35);
+}
+
+/* Inner dark card background */
+.skill-card::after {
+    content: "";
+
+    position: absolute;
+    inset: 1px;
+
+    background: rgba(23, 23, 23, 0.95);
+
+    border-radius: 23px;
+
+    z-index: 0;
+}
+
+
+/* Glow around border */
+.skill-card::before {
+    content: "";
+
+    position: absolute;
+    inset: -40%;
+
+    background: conic-gradient(from 0deg,
+            transparent,
+            #f472b6,
+            #c084fc,
+            #818cf8,
+            #38bdf8,
+            #2dd4bf,
+            #fbbf24,
+            transparent);
+
+    filter: blur(30px);
+    opacity: 0.5;
+
+    /* animation: rotateGradient 3s linear infinite; */
+}
+
+
+/* Keep your icon/text above background */
+.skill-logo,
+.skill-name {
+    position: relative;
+    z-index: 1;
+}
+
+.skill-name {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.skill-logo {
+    font-size: 90px;
+}
+
+.skill-logo i {
+    font-size: 90px;
+    color: #fff;
+
+}
+
+.skill-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+@media(max-width: 1000px){
+    .skill-heading{
+        margin-top: 80px;
+    }
+
+    .skill-container{
+        gap: 30px;
+    }
+}

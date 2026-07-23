@@ -1,0 +1,120 @@
+.banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /* border: 2px solid #ffffff; */
+    height: 350px;
+    margin-top: 100px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* border: 1px solid crimson; */
+    height: 300px;
+    width: 550px;
+    gap: 10px;
+}
+
+.name h3{
+    color: rgba(200, 199, 199, 0.75);
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    /* font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1.1; */
+}
+
+.position h1{
+    /* color: #ffffff;
+    font-size: 3.75rem; */
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 65px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    
+}
+
+
+.banner .description{
+    color: rgba(255, 255, 255, 0.55);
+    /* border: 1px solid gray; */
+    width: 700px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.45);
+    max-width: 650px;
+}
+
+.banner-btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.banner-btns a{
+    padding: 15px 22px;
+    background: rgba(22, 22, 22, 0.72);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    /* Border */
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 28px;
+    /* Very subtle shadow */
+    box-shadow:
+        0 4px 18px rgba(0,0,0,.18);
+    z-index: 1000;
+    color: #ffffff;
+    transition: 0.8s;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.banner-btns a:hover{
+    cursor: pointer;
+    background-color: gray;
+    box-shadow: 10px 10px 40px rgba(144, 143, 143, 0.35);
+}
+
+@media (max-width: 1000px){
+    .banner{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    }
+
+    .intro{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 50px; */
+    }
+
+    .intro .name{
+        margin-top: 120px;
+    }
+
+    .banner .description{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}

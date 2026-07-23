@@ -1,0 +1,18 @@
+body{
+    /* background-color: #111111; */
+    background-color: #000000;
+    /* background-color: #0a0a0a; */
+     /* background-color: #0d1117; */
+     /* background-color: #1e1e1e; */
+      /* background-color: #090014; */
+       /* background-color: #121212; */
+    /* background-color: #fff; */
+}
+
+h1{
+    color: aliceblue;
+}
+
+html{
+    scroll-behavior: smooth;
+}
