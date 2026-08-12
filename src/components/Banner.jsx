@@ -21,9 +21,9 @@ function Banner() {
             </div>
 
 
-            <div className="description">I'm a passionate web developer focused on building modern, responsive,
+            <div className="description"><p>I'm a passionate web developer focused on building modern, responsive,
                 and user-friendly websites. I enjoy turning ideas into interactive digital experiences using clean
-                code and creative solutions.</div>
+                code and creative solutions.</p></div>
         </div>
     </>);
 }

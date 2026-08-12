@@ -76,3 +76,18 @@
         /* display: none; */
     }
 }
+
+@media (max-width: 700px){
+    .navbar{
+        width: calc(100% - 32px);
+        height: 58px;
+        margin-top: 16px;
+        top: 8px;
+    }
+
+    .nav-links{
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+}
